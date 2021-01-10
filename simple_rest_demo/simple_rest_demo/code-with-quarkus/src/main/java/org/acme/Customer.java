@@ -12,7 +12,10 @@ public class Customer extends Clients {
 
     public Customer(String id, String name) {
         super(id, name);
+    }
 
+    public Customer(String id, String name, String CPR) {
+        super(id, name, CPR);
     }
 
     public List<Transaction> getTransactions() {

@@ -1,6 +1,10 @@
 package org.acme;
 
+import dtu.ws.fastmoney.*;
+
+
 import javax.ws.rs.NotFoundException;
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -8,6 +12,7 @@ import java.util.Map;
 public class SimpleDTUPayBL implements ISimpleDTUPayBL {
 
     static SimpleDTUPayBL instance_ = new SimpleDTUPayBL();
+    BankService bank = new BankServiceService().getBankServicePort();
 
     private Map<String, Customer> customerMap = new HashMap<>();
     private Map<String, Merchant> merchantMap = new HashMap<>();
@@ -56,4 +61,10 @@ public class SimpleDTUPayBL implements ISimpleDTUPayBL {
         }
         return t.isApproved();
     }
+
+    @Override
+    public void registerToBank(User u, BigDecimal d) throws BankServiceException_Exception {
+        bank.createAccountWithBalance(u, d);
+    }
+
 }

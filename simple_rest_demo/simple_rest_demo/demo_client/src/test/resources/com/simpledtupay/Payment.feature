@@ -16,3 +16,15 @@ Feature: Payment
     When the merchant initiates a new payment for 10 kr by the customer
     Then the payment is not successful
     And a error message is returned saying customer not know
+
+  Scenario: Successful Payment with SOAP
+    Given the customer "Ryan" "Anderson" with CPR "061100-7124" has a bank account
+    And the balance of that account is 1000
+    And the customer is registered with DTUPay
+    And the merchant "Jo" "Kuckles" with CPR number "110561-2741" has a bank account
+    And the balance of that account is 2000
+    And the merchant is registered with DTUPay
+    When the merchant initiates a payment for "10" kr by the customer
+    Then the payment is successful
+    And the balance of the customer at the bank is 990 kr
+    And the balance of the merchant at the bank is 2010 kr
