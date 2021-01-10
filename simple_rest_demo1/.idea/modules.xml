@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/code-with-quarkus/Max-REST-API.iml" filepath="$PROJECT_DIR$/code-with-quarkus/Max-REST-API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo_client/demo-client.iml" filepath="$PROJECT_DIR$/demo_client/demo-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/simple_rest_demo1.iml" filepath="$PROJECT_DIR$/.idea/simple_rest_demo1.iml" />
+    </modules>
+  </component>
+</project>
