@@ -87,7 +87,7 @@ public class SimpleDTUPayBL implements ISimpleDTUPayBL {
 
     @Override
     public boolean checkIfCustomerHasABankAccount(String accountID) {
-        bank.
+        //bank.
         return false;
     }
 
