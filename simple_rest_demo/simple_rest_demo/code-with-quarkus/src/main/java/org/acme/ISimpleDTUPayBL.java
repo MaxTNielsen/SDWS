@@ -20,4 +20,6 @@ public interface ISimpleDTUPayBL {
     public void registerBankAccount(String fname, String sname, String cpr, BigDecimal balance) throws BankServiceException_Exception;
 
     public BigDecimal getBalance(String accountID);
+
+    public boolean checkIfCustomerHasABankAccount(String accountID);
 }
