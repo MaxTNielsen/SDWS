@@ -5,72 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abb34cc5-7824-4ae1-8b95-90d137469ff9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../g-05.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_5_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_6_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_jakarta_mail_1_6_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_jxc_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_xjc_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_messaging_saaj_saaj_impl_1_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_stream_buffer_streambuffer_1_5_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_ws_jaxws_eclipselink_plugin_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_ws_jaxws_rt_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_ws_jaxws_tools_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_ws_policy_2_7_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_ws_sdo_eclipselink_plugin_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_jws_jakarta_jws_api_2_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_2_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_soap_jakarta_xml_soap_api_1_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_ws_jakarta_xml_ws_api_2_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_commonj_sdo_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_asm_2_7_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_core_2_7_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_moxy_2_7_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_persistence_org_eclipse_persistence_sdo_2_7_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_external_management_api_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_gmbal_gmbal_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_ha_ha_api_3_1_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_pfl_pfl_basic_4_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_pfl_pfl_tf_4_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_mimepull_mimepull_1_9_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/AccountInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/BankService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/BankServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/BankServiceException_Exception.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/BankServiceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/CreateAccountWithBalance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/CreateAccountWithBalanceResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/GetAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/GetAccountByCprNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/GetAccountByCprNumberResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/GetAccountResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/GetAccounts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/GetAccountsResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/ObjectFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/RetireAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/RetireAccountResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/TransferMoneyFromTo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/TransferMoneyFromToResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/dtu/ws/fastmoney/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/BankAccountResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/Clients.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/Clients.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/BankAccountResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/BankAccountResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/CustomerResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/CustomerResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/ISimpleDTUPayBL.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/ISimpleDTUPayBL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/Merchant.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/Merchant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/MerchantResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/MerchantResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/SimpleDTUPayBL.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/SimpleDTUPayBL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/paymentResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple_rest_demo/code-with-quarkus/src/main/java/org/acme/paymentResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple_rest_demo/demo_client/demo-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/simple_rest_demo/demo_client/demo-client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simple_rest_demo/demo_client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/simple_rest_demo/demo_client/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple_rest_demo/demo_client/src/test/java/com/simpledtupay/SimpleDTUPay.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple_rest_demo/demo_client/src/test/java/com/simpledtupay/SimpleDTUPay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple_rest_demo/demo_client/src/test/java/com/simpledtupay/SimpleDTUPaySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/simple_rest_demo/demo_client/src/test/java/com/simpledtupay/SimpleDTUPaySteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/simple_rest_demo/demo_client/src/test/resources/com/simpledtupay/Payment.feature" beforeDir="false" afterPath="$PROJECT_DIR$/simple_rest_demo/demo_client/src/test/resources/com/simpledtupay/Payment.feature" afterDir="false" />
@@ -133,13 +77,15 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.CucumberTest">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -218,7 +164,8 @@
       <workItem from="1610228395625" duration="3085000" />
       <workItem from="1610276609270" duration="12470000" />
       <workItem from="1610292276003" duration="340000" />
-      <workItem from="1610292671819" duration="10049000" />
+      <workItem from="1610292671819" duration="14068000" />
+      <workItem from="1610354139240" duration="4539000" />
     </task>
     <servers />
   </component>
@@ -235,6 +182,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

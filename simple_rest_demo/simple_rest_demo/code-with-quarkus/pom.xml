@@ -60,8 +60,8 @@
       <groupId>io.rest-assured</groupId>
       <artifactId>rest-assured</artifactId>
       <scope>test</scope>
-
     </dependency>
+
     <dependency><groupId>com.sun.xml.ws</groupId>
       <artifactId>jaxws-ri</artifactId>
       <version>2.3.3</version>

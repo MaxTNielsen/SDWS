@@ -63,8 +63,26 @@ public class SimpleDTUPayBL implements ISimpleDTUPayBL {
     }
 
     @Override
-    public void registerToBank(User u, BigDecimal d) throws BankServiceException_Exception {
-        bank.createAccountWithBalance(u, d);
+    public void registerBankAccount(String fname, String sname, String cpr, BigDecimal balance) {
+        User u = new User();
+        u.setFirstName(fname);
+        u.setLastName(sname);
+        u.setCprNumber(cpr);
+        BigDecimal bigDecimal = new BigDecimal("1000");
+        try {
+            bank.createAccountWithBalance(u, bigDecimal);
+        } catch (BankServiceException_Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    @Override
+    public BigDecimal getBalance(String accountID){
+        try{
+            return bank.getAccount(accountID).getBalance();
+        } catch (BankServiceException_Exception e){
+            System.out.println(e.getMessage());}
+        return null;
     }
 
 }

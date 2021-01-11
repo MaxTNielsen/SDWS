@@ -1,6 +1,7 @@
 package com.simpledtupay;
 
 import dtu.ws.fastmoney.*;
+import io.cucumber.java.af.En;
 import org.acme.*;
 import org.acme.Transaction;
 
@@ -17,10 +18,10 @@ import java.util.List;
 public class SimpleDTUPay {
     WebTarget baseUrl;
     WebTarget baseUrlForBank;
-    BankService b;
+    BankService bank;
 
     public SimpleDTUPay() {
-        b = new BankServiceService().getBankServicePort();
+        bank = new BankServiceService().getBankServicePort();
         Client client = ClientBuilder.newClient();
         baseUrl = client.target("http://localhost:8080/");
         Client clientBank = ClientBuilder.newClient();
@@ -51,22 +52,32 @@ public class SimpleDTUPay {
         return baseUrl.path("transactions").path(cid).request().accept(MediaType.APPLICATION_JSON).get(Customer.class).getTransactions();
     }
 
-    public void registerBankAccount(String fname, String sname, String cpr) {
+    public String registerBankAccount(String fname, String sname, String cpr) {
         User u = new User();
         u.setFirstName(fname);
         u.setLastName(sname);
         u.setCprNumber(cpr);
         BigDecimal bigDecimal = new BigDecimal("1000");
         try {
-            b.retireAccount(cpr);
-            b.createAccountWithBalance(u, bigDecimal);
-        } catch (BankServiceException_Exception e){
+            return bank.createAccountWithBalance(u, bigDecimal);
+        } catch (BankServiceException_Exception e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
+    }
+
+    public void deleteAccounts(List<String> l) {
+        try {
+            for (String s : l) {
+                System.out.println("Deleting " + s);
+                bank.retireAccount(s);
+            }
+        } catch (BankServiceException_Exception e) {
             System.out.println(e.getMessage());
         }
-       /* Response response = baseUrlForBank.path("accounts").request().post(Entity.entity(u, MediaType.TEXT_XML));
-        if (response.getStatus() == 200) {
-            response.close();
-            return true;
-        } else return false;*/
+    }
+
+    public BigDecimal getBalance(String accountID) {
+        return baseUrl.path("accounts").path("balance").request().post(Entity.entity(accountID, MediaType.APPLICATION_JSON), BigDecimal.class);
     }
 }

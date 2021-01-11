@@ -18,11 +18,11 @@ Feature: Payment
     And a error message is returned saying customer not know
 
   Scenario: Successful Payment with SOAP
-    Given the customer "Ryan" "Anderson" with CPR "061100-7124" has a bank account
+    Given the customer "yezzzzzzz" "man" with CPR "953282-7131" has a bank account
     And the balance of that account is 1000
     And the customer is registered with DTUPay
-    And the merchant "Jo" "Kuckles" with CPR number "110561-2741" has a bank account
-    And the balance of that account is 2000
+    And the merchant "yo" "Kucklez" with CPR number "557267-2291" has a bank account
+    And the balance of his account is 2000
     And the merchant is registered with DTUPay
     When the merchant initiates a payment for "10" kr by the customer
     Then the payment is successful

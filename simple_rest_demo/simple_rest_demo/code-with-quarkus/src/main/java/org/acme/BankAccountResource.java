@@ -6,12 +6,17 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import java.math.BigDecimal;
 
-//@Path("/accounts")
+@Path("/accounts/balance")
 public class BankAccountResource {
+    SimpleDTUPayBL dtuPay = SimpleDTUPayBL.getInstance_();
 
-    /*@POST
+    @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.TEXT_PLAIN)*/
+    @Produces(MediaType.TEXT_PLAIN)
+    public BigDecimal getAccountBalance(String accountID){
+        return dtuPay.getBalance(accountID);
+    }
 
 }

@@ -8,14 +8,14 @@ import java.net.URISyntaxException;
 
 @Path("/accounts")
 public class CustomerResource {
-    SimpleDTUPayBL dtuPay1 = SimpleDTUPayBL.getInstance_();
+    SimpleDTUPayBL dtuPay = SimpleDTUPayBL.getInstance_();
 
     @Path("{id}")
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getCustomers(@PathParam("id") String id) {
         try {
-            return dtuPay1.getCustomer(Integer.parseInt(id));
+            return dtuPay.getCustomer(Integer.parseInt(id));
         } catch (NotFoundException e) {
             System.out.println(e.getMessage());
         }
@@ -27,8 +27,8 @@ public class CustomerResource {
     @Consumes(MediaType.APPLICATION_JSON)
     public Response registerCustomer(Customer c) {
         try {
-            if (!dtuPay1.getCustomerMap().containsKey(c.getId())) {
-                dtuPay1.registerCustomer(c);
+            if (!dtuPay.getCustomerMap().containsKey(c.getId())) {
+                dtuPay.registerCustomer(c);
                 return Response.created(new URI("http://localhost:8080/accounts" + c.getId())).build();
             } else return Response.status(404, "Customer already registered").build();
         } catch (URISyntaxException e) {

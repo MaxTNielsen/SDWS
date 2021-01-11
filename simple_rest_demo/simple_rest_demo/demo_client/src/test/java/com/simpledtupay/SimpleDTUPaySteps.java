@@ -7,38 +7,38 @@ import org.acme.Transaction;
 import org.junit.After;
 
 import javax.ws.rs.WebApplicationException;
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
 
 public class SimpleDTUPaySteps {
-    String cid, mid, errorMessage;
+    String cid, mid, accountID;
     int amount;
+    BigDecimal balance;
     Exception exception;
     List<Transaction> t;
-    SimpleDTUPay dtuPay = new SimpleDTUPay();
+    List<String> accountIDs = new ArrayList<>();
+    SimpleDTUPay dtuPayClient = new SimpleDTUPay();
     boolean successful, unsuccessful;
-
-    @After public void deleteLists(List<String> s){
-
-    }
 
     @Given("a customer with id {string}")
     public void aCustomerWithId(String cid) {
         this.cid = cid;
-        dtuPay.registerCustomer(cid, "customer1");
+        dtuPayClient.registerCustomer(cid, "customer1");
     }
 
     @Given("a merchant with id {string}")
     public void aMerchantWithId(String mid) {
         this.mid = mid;
-        dtuPay.registerMerchant(mid, "merchant1");
+        dtuPayClient.registerMerchant(mid, "merchant1");
     }
 
     @When("the merchant initiates a payment for {int} kr by the customer")
     public void theMerchantInitiatesAPaymentForKrByTheCustomer(int amount) {
         this.amount = amount;
-        this.successful = dtuPay.pay(mid, cid, amount);
+        this.successful = dtuPayClient.pay(mid, cid, amount);
     }
 
     @Then("the payment is successful")
@@ -56,7 +56,7 @@ public class SimpleDTUPaySteps {
 
     @When("the manager asks for a list of transactions")
     public void theManagerAsksForAListOfTransactions() {
-        this.t = dtuPay.transactions(cid);
+        this.t = dtuPayClient.transactions(cid);
     }
 
     @Then("the list contains a transaction where customer {string} paid {int} kr to merchant {string}")
@@ -80,7 +80,7 @@ public class SimpleDTUPaySteps {
     public void theMerchantMakesANewTransaction(int amount) {
         this.amount = amount;
         try {
-            this.unsuccessful = dtuPay.pay(mid, cid, amount);
+            this.unsuccessful = dtuPayClient.pay(mid, cid, amount);
         } catch (WebApplicationException e) {
             this.exception = e;
         }
@@ -100,18 +100,21 @@ public class SimpleDTUPaySteps {
 
     @Given("the customer {string} {string} with CPR {string} has a bank account")
     public void theCustomerWithCPRHasABankAccount(String string, String string2, String string3) {
-        dtuPay.registerBankAccount(string, string2, string3);
+        this.accountID = dtuPayClient.registerBankAccount(string, string2, string3);
+        this.accountIDs.add(accountID);
+        //dtuPayClient.deleteAccounts(accountIDs);
         //throw new io.cucumber.java.PendingException();
     }
 
     @Given("the balance of that account is {int}")
     public void theBalanceOfThatAccountIs(Integer int1) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        this.balance = BigDecimal.valueOf(int1);
+        assertEquals(dtuPayClient.getBalance(accountID), balance);
+        //throw new io.cucumber.java.PendingException();
     }
 
-    @Given("the balance of that account is 1000And the customer is registered with DTUPay")
-    public void theBalanceOfThatAccountIs1000AndTheCustomerIsRegisteredWithDTUPay() {
+    @Given("the customer is registered with DTUPay")
+    public void theCustomerIsRegisteredWithDTUPay() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
@@ -122,8 +125,14 @@ public class SimpleDTUPaySteps {
         throw new io.cucumber.java.PendingException();
     }
 
-    @Given("the balance of that account is 2000And the merchant is registered with DTUPay")
-    public void theBalanceOfThatAccountIs2000AndTheMerchantIsRegisteredWithDTUPay() {
+    @Given("the balance of his account is {int}")
+    public void theBalanceOfHisAccountIs(Integer int1) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @Given("the merchant is registered with DTUPay")
+    public void theMerchantIsRegisteredWithDTUPay() {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
@@ -134,8 +143,8 @@ public class SimpleDTUPaySteps {
         throw new io.cucumber.java.PendingException();
     }
 
-    @Then("the payment is successfulAnd the balance of the customer at the bank is {int} kr")
-    public void thePaymentIsSuccessfulAndTheBalanceOfTheCustomerAtTheBankIsKr(Integer int1) {
+    @Then("the balance of the customer at the bank is {int} kr")
+    public void theBalanceOfTheCustomerAtTheBankIsKr(Integer int1) {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
@@ -146,4 +155,7 @@ public class SimpleDTUPaySteps {
         throw new io.cucumber.java.PendingException();
     }
 
+    @After public void deleteLists(){
+        dtuPayClient.deleteAccounts(accountIDs);
+    }
 }

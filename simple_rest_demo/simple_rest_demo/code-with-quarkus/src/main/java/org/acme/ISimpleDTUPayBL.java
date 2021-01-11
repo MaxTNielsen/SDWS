@@ -17,5 +17,7 @@ public interface ISimpleDTUPayBL {
 
     List<Transaction> getAllTransactions(String cid);
 
-    public void registerToBank(User u, BigDecimal d) throws BankServiceException_Exception;
+    public void registerBankAccount(String fname, String sname, String cpr, BigDecimal balance) throws BankServiceException_Exception;
+
+    public BigDecimal getBalance(String accountID);
 }
